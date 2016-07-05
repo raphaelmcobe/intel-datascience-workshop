@@ -11828,11 +11828,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>
+<p>&lt;/div&gt;
     <h1>Leveraging Data Analytics with Intel DAAL</h1>
     <h3>Raphael Mendes de Oliveira Cóbe</h3>
     <p>rmcobe@ncc.unesp.br</p>
-</p>
+&lt;/div&gt;</p>
 <p><div style="width:80%; margin-left:auto; margin-right:auto;">
     <img src=intel_logo.png style="height:170px; float:left;"/>
     <img src=ncc_logo.png style="height:170px; float:right;"/></div></p>
@@ -11987,16 +11987,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Retrieving-values-of-a-Feature">Retrieving values of a Feature<a class="anchor-link" href="#Retrieving-values-of-a-Feature">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
+<h1 id="Retrieving-values-of-a-Feature">Retrieving values of a Feature<a class="anchor-link" href="#Retrieving-values-of-a-Feature">&#182;</a></h1><ul>
 <li>By Column</li>
 </ul>
 
@@ -12046,16 +12037,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Retrieving-values-of-a-Feature">Retrieving values of a Feature<a class="anchor-link" href="#Retrieving-values-of-a-Feature">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
+<h1 id="Retrieving-values-of-a-Feature">Retrieving values of a Feature<a class="anchor-link" href="#Retrieving-values-of-a-Feature">&#182;</a></h1><ul>
 <li>By Rows</li>
 </ul>
 
@@ -12169,7 +12151,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12437,10 +12419,145 @@ DataTypes:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-use-it?">Why use it?<a class="anchor-link" href="#Why-use-it?">&#182;</a></h1><ul>
+<li>Questions we may answer:<ul>
+<li>Is there a relationship between house pricing and the house size?</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><img src="lm4.png" style="height:450px;"/></center>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-use-it?">Why use it?<a class="anchor-link" href="#Why-use-it?">&#182;</a></h1><ul>
+<li>Questions we may answer:<ul>
+<li>Is there a relationship between house pricing and the number of bedrooms?</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center><img src="lm3.png" style="height:450px;"/></center>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Regression-Problems">Regression Problems<a class="anchor-link" href="#Regression-Problems">&#182;</a></h1><ul>
+<li>Data set where a <strong>right answer</strong> is given as input to the problem<ul>
+<li><strong>We know actual prices for houses</strong></li>
+<li>Learn what makes the price a certain value from the training data;</li>
+<li>More right answers based on new training data where we don't know the price already.</li>
+</ul>
+</li>
+<li>We also call this a regression problem<ul>
+<li>Predict continuous valued output (price)</li>
+<li>No real discrete delineation </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="The-math-behind-it">The math behind it<a class="anchor-link" href="#The-math-behind-it">&#182;</a></h1><ul>
 <li>Assume that there is a dependency between variables;<ul>
 <li>More specifically, $Y$ depends <em>linearly</em> on $X_1, X_2, X_3, X_n$</li>
 <li>In most real world data, <font color='red'>regression is never Linear</font>;<center><img src="lm2.png" style="padding-top:30px;"/></center></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-math-behind-it">The math behind it<a class="anchor-link" href="#The-math-behind-it">&#182;</a></h1><ul>
+<li>Given samples $(x_i,y_i)$ where $1 \leq i \leq n$<ul>
+<li>Predict $y_{i+1}$ given the new information $x_{i+1}$</li>
+</ul>
+</li>
+<li>We assume that the data can be modeled with the following: $Y = \theta_0 + \theta_1X +\epsilon$ where<ul>
+<li>$\theta_0$ is the <strong>intercept</strong></li>
+<li>$\theta_1$ is the <strong>slope</strong></li>
+</ul>
+</li>
+<li>Given some estimates $\theta_0$ and $\theta_1$ for the model coeficients, we predict future $y$ values using: $\hat{y} = \theta_0+\theta_1x$</li>
+<li>The <em>ith</em> residual: $\epsilon_i = y_i - \hat{y}_i$</li>
+<li>A hypothesis takes in some variable;</li>
+<li>Uses parameters determined by a learning system</li>
+<li>Outputs a prediction based on that input</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-math-behind-it">The math behind it<a class="anchor-link" href="#The-math-behind-it">&#182;</a></h1><ul>
+<li>If $\theta_1 \geq 0$ then we get a positive slope;</li>
+<li>If $\theta_0 = 1.5$ and $\theta_1 = 0$ then we get straight line parallel with axis X along 1.5;</li>
+<li>The <strong>squared error</strong> is thus: $E=\sum_{i=1}^{m}(\hat{y}_i - y_i)^2$</li>
+<li>We face a <strong>Minimization Problem</strong></li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-math-behind-it">The math behind it<a class="anchor-link" href="#The-math-behind-it">&#182;</a></h1><ul>
+<li>Derivatives for minimization.</li>
+<li>Mean Squared Error: $E=\sum_{i=1}^{m}(\hat{y}_i - \theta_1x_i)^2$<ul>
+<li>Simplify $\theta_0 = 0$
+$$
+\frac{\partial E}{\partial\theta_1} = -2\sum_{i=1}^{m}x_i(\hat{y}_i - \theta_1x_i) = 0
+$$
+$$
+\sum_{i=1}^{m}x_iy_i = \theta_1\sum_{i=1}^{m}x_i^2
+$$
+$$
+\theta_1 = \frac{\sum_{i=1}^{m}x_iy_i}{\sum_{i=1}^{m}x_i^2}
+$$</li>
 </ul>
 </li>
 </ul>
@@ -12503,7 +12620,7 @@ DataTypes:
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">testDatasetFileName</span> <span class="o">=</span> <span class="s">&#39;./housing-test.csv&#39;</span>
@@ -12543,7 +12660,7 @@ DataTypes:
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[183]:</div>
+<div class="prompt input_prompt">In&nbsp;[241]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">printNumericTable</span><span class="p">(</span><span class="n">predictionResult</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">prediction</span><span class="o">.</span><span class="n">prediction</span><span class="p">),</span> 
@@ -12598,6 +12715,277 @@ Ground truth (first 10 rows):
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-Use-it?">Why Use it?<a class="anchor-link" href="#Why-Use-it?">&#182;</a></h1><ul>
+<li>Modes: <ul>
+<li><strong>Batch</strong>: the only compute method of a particular algorithm class is used; </li>
+<li><strong>Online</strong>: this computation mode assumes that the data arrives in blocks;<ul>
+<li><code>compute()</code> method each time new input becomes available.</li>
+<li>When the last block of data arrives, call the <code>finalizeCompute()</code> method to produce final results;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-Use-it?">Why Use it?<a class="anchor-link" href="#Why-Use-it?">&#182;</a></h1><ul>
+<li>Modes:<ul>
+<li><strong>Distributed</strong>: data sets distributed across several devices;<ul>
+<li>Assumes that the data set is split in <em>nblocks</em> blocks across computation nodes.</li>
+<li>define the computation step for an algorithm; </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-Use-it?-Distributed!">Why Use it? Distributed!<a class="anchor-link" href="#Why-Use-it?-Distributed!">&#182;</a></h1><ul>
+<li>Provide the <code>computeStep</code> value to the constructor during initialization of the algorithm;</li>
+<li>Use the <code>compute()</code> method on each computation node (partial results)</li>
+<li>Provide the computeStep value to the constructor during initialization of the algorithm;</li>
+<li>Use the <code>compute()</code> method on each computation node (partial results)</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Distributed-processing">Distributed processing<a class="anchor-link" href="#Distributed-processing">&#182;</a></h1><center><img src="distributed.png" style="padding-top:40px; height:650px;"/></center>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Distributed-processing">Distributed processing<a class="anchor-link" href="#Distributed-processing">&#182;</a></h1><center><img src="distributed2.png" style="padding-top:40px; height:650px;"/></center>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Multiple-inputs---splitting">Multiple inputs - splitting<a class="anchor-link" href="#Multiple-inputs---splitting">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">nBlocks</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">nFeatures</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">nOutcomes</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">trainDatasetFileNames</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;./housing-distributed-train1.csv&#39;</span><span class="p">,</span> <span class="s">&#39;./housing-distributed-train2.csv&#39;</span><span class="p">]</span>
+
+<span class="n">masterAlgorithm</span> <span class="o">=</span> <span class="n">training</span><span class="o">.</span><span class="n">Distributed</span><span class="p">(</span><span class="n">step2Master</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nBlocks</span><span class="p">):</span>
+    <span class="n">trainDataSource</span> <span class="o">=</span> <span class="n">FileDataSource</span><span class="p">(</span><span class="n">trainDatasetFileNames</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">DataSourceIface</span><span class="o">.</span><span class="n">notAllocateNumericTable</span><span class="p">,</span>
+                                     <span class="n">DataSourceIface</span><span class="o">.</span><span class="n">doDictionaryFromContext</span><span class="p">)</span>
+    <span class="n">trainData</span> <span class="o">=</span> <span class="n">HomogenNumericTable</span><span class="p">(</span><span class="n">nFeatures</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NumericTableIface</span><span class="o">.</span><span class="n">notAllocate</span><span class="p">)</span>
+    <span class="n">trainOutcome</span> <span class="o">=</span> <span class="n">HomogenNumericTable</span><span class="p">(</span><span class="n">nOutcomes</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NumericTableIface</span><span class="o">.</span><span class="n">notAllocate</span><span class="p">)</span>
+    <span class="n">mergedData</span> <span class="o">=</span> <span class="n">MergedNumericTable</span><span class="p">(</span><span class="n">trainOutcome</span><span class="p">,</span> <span class="n">trainData</span><span class="p">)</span>
+    <span class="n">nObservations</span> <span class="o">=</span> <span class="n">trainDataSource</span><span class="o">.</span><span class="n">loadDataBlock</span><span class="p">(</span><span class="n">mergedData</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Observations read on file {}: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">nObservations</span><span class="p">))</span>
+    <span class="n">localAlgorithm</span> <span class="o">=</span> <span class="n">training</span><span class="o">.</span><span class="n">Distributed</span><span class="p">(</span><span class="n">step1Local</span><span class="p">)</span>
+    <span class="n">localAlgorithm</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">training</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">trainData</span><span class="p">)</span>    
+    <span class="n">localAlgorithm</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">training</span><span class="o">.</span><span class="n">dependentVariables</span><span class="p">,</span> <span class="n">trainOutcome</span><span class="p">)</span>
+    <span class="n">partialResult</span> <span class="o">=</span> <span class="n">localAlgorithm</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+    <span class="n">masterAlgorithm</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">training</span><span class="o">.</span><span class="n">partialModels</span><span class="p">,</span> <span class="n">partialResult</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Observations read on file 1: 215
+Observations read on file 2: 220
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Multiple-input---merging-results">Multiple input - merging results<a class="anchor-link" href="#Multiple-input---merging-results">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">masterAlgorithm</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+
+<span class="n">trainingResult</span> <span class="o">=</span> <span class="n">masterAlgorithm</span><span class="o">.</span><span class="n">finalizeCompute</span><span class="p">()</span>
+<span class="n">printNumericTable</span><span class="p">(</span><span class="n">trainingResult</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">training</span><span class="o">.</span><span class="n">model</span><span class="p">)</span><span class="o">.</span><span class="n">getBeta</span><span class="p">(),</span> <span class="s">&quot;Linear Regression coefficients:&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Linear Regression coefficients:
+-6356.393 6.127     2760.738  16551.026 7322.687  
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Testing-your-model">Testing your model<a class="anchor-link" href="#Testing-your-model">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">testDatasetFileName</span> <span class="o">=</span> <span class="s">&#39;./housing-test.csv&#39;</span>
+
+<span class="n">testDataSource</span> <span class="o">=</span> <span class="n">FileDataSource</span><span class="p">(</span>
+    <span class="n">testDatasetFileName</span><span class="p">,</span> <span class="n">DataSourceIface</span><span class="o">.</span><span class="n">doAllocateNumericTable</span><span class="p">,</span>
+    <span class="n">DataSourceIface</span><span class="o">.</span><span class="n">doDictionaryFromContext</span>
+<span class="p">)</span>
+
+<span class="n">testData</span> <span class="o">=</span> <span class="n">HomogenNumericTable</span><span class="p">(</span><span class="n">nFeatures</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NumericTableIface</span><span class="o">.</span><span class="n">notAllocate</span><span class="p">)</span>
+<span class="n">testGroundTruth</span> <span class="o">=</span> <span class="n">HomogenNumericTable</span><span class="p">(</span><span class="n">nOutcomes</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NumericTableIface</span><span class="o">.</span><span class="n">notAllocate</span><span class="p">)</span>
+<span class="n">mergedData</span> <span class="o">=</span> <span class="n">MergedNumericTable</span><span class="p">(</span><span class="n">testGroundTruth</span><span class="p">,</span><span class="n">testData</span><span class="p">)</span>
+
+<span class="n">testDataSource</span><span class="o">.</span><span class="n">loadDataBlock</span><span class="p">(</span><span class="n">mergedData</span><span class="p">)</span>
+
+<span class="n">algorithm</span> <span class="o">=</span> <span class="n">prediction</span><span class="o">.</span><span class="n">Batch</span><span class="p">()</span>
+
+<span class="n">algorithm</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">setTable</span><span class="p">(</span><span class="n">prediction</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">testData</span><span class="p">)</span>
+<span class="n">algorithm</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">setModel</span><span class="p">(</span><span class="n">prediction</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="n">trainingResult</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">training</span><span class="o">.</span><span class="n">model</span><span class="p">))</span>
+
+<span class="n">predictionResult</span> <span class="o">=</span> <span class="n">algorithm</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Testing-your-model">Testing your model<a class="anchor-link" href="#Testing-your-model">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">printNumericTable</span><span class="p">(</span><span class="n">predictionResult</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">prediction</span><span class="o">.</span><span class="n">prediction</span><span class="p">),</span> 
+                  <span class="s">&quot;Linear Regression prediction results: (first 10 rows):&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">printNumericTable</span><span class="p">(</span><span class="n">testGroundTruth</span><span class="p">,</span> <span class="s">&quot;Ground truth (first 10 rows):&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Linear Regression prediction results: (first 10 rows):
+77584.291 
+97463.689 
+54689.190 
+65962.833 
+75165.556 
+47366.503 
+55175.751 
+47366.503 
+62841.671 
+65407.807 
+
+Ground truth (first 10 rows):
+75000.000 
+132000.000
+60000.000 
+65000.000 
+69000.000 
+51900.000 
+57000.000 
+65000.000 
+79500.000 
+72500.000 
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="What-is-included?">What is included?<a class="anchor-link" href="#What-is-included?">&#182;</a></h1><ul>
 <li>Algorithms for:<ul>
 <li><strong>Pre-processing</strong>, <strong>Transformation</strong>, <strong>Analysis</strong>, <strong>Modeling</strong>.</li>
@@ -12605,6 +12993,15 @@ Ground truth (first 10 rows):
 </li>
 </ul>
 <center><img src="intel-daal-all-data-analysis-stages.png"/></center>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Any-questions?">Any questions?<a class="anchor-link" href="#Any-questions?">&#182;</a></h1>
 </div>
 </div>
 </div></section></section>
